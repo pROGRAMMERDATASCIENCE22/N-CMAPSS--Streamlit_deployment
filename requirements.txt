@@ -1,0 +1,6 @@
+streamlit
+pandas
+PIL import Image
+numpy as np
+os.path import join as opj
+matplotlib.pyplot
