@@ -87,7 +87,7 @@ if genre == 'EDA':
     with t2:
         t2.subheader("Altitude ranging across Flight classes 1, 2, 3 ")
         st.text(["Flight class vs Altitude"])
-        image = Image.open(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\\Flight_Altitude.png')
+        image = Image.open(r'Flight_Altitude.png')
         st.image(image, caption="", use_column_width='always')
         st.write(" Higher the Flight class ( length of the flight ) higher the altitude ")
 
@@ -95,7 +95,7 @@ if genre == 'EDA':
         t10, t12 = st.tabs(["Box Plot", "Distribution between development and Test"])
         with t10:
             t10.subheader("Distributions of Target values across Units")
-            image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\\box_unit_target.png')
+            image = Image.open(r'box_unit_target.png')
             st.image(image, caption="", use_column_width='always')
         with t12:
             t12.text(
@@ -107,13 +107,13 @@ if genre == 'EDA':
                 )
             t13, t14 = st.tabs(["DS01_005--KDE", "DS008a-009--KDE"])
             with t13:
-                image = Image.open(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\kde1.png')
+                image = Image.open(r'kde1.png')
                 st.image(image, caption="", use_column_width='always')
             with t14:
-                image = Image.open(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\kde2.png')
+                image = Image.open(r'kde2.png')
                 st.image(image, caption="", use_column_width='always')
     with t4:
-        image = Image.open(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\time series final.png')
+        image = Image.open(r'time series final.png')
         st.image(image, caption='')
         st.text(
             """
@@ -145,16 +145,16 @@ elif genre == 'ML models':
     st.subheader("NN MODELS ")
     t1, t2, t3, t4 = st.tabs(['GRU', 'DEEPGRU', 'LARGEST GRU', 'TRANSFORMER'])
     with t1:
-         image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\gru_cnn_dc.png')
+         image = Image.open('gru_cnn_dc.png')
          st.image(image, caption = "")
     with t2:
-         image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\deepgrucnnfc.png')
+         image = Image.open('deepgrucnnfc.png')
          st.image(image, caption = "")
     with t3:
-         image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\largestcudnngru.png')
+         image = Image.open('largestcudnngru.png')
          st.image(image, caption = "")
     with t4:
-         image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\\transformer.png')
+         image = Image.open('transformer.png')
          st.image(image, caption = "")
     
 elif genre == 'ML Model and Loss plots':
@@ -165,19 +165,19 @@ elif genre == 'ML Model and Loss plots':
         t5, t6, t7, t8, t9 = st.tabs(["03-012-Unit 15", "05-Unit9", "06-Unit10", "08c-Unit9", "Loss Plot"])
         with t5:
             t5.subheader("RMSE--15.38")
-            image = Image.open(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\GRU_N-CMAPSS_DS03-012_unit15_test_w50_s1_bs256_lr0.001_sub10_rmse-15.38.png')
+            image = Image.open(r'GRU_N-CMAPSS_DS03-012_unit15_test_w50_s1_bs256_lr0.001_sub10_rmse-15.38.png')
             st.image(image, caption='RMSE--15.38')
         with t6:
             t6.subheader("RMSE--15.38")
-            image = Image.open(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\GRU_N-CMAPSS_DS05_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-15.38.png')
+            image = Image.open(r'GRU_N-CMAPSS_DS05_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-15.38.png')
             st.image(image, caption='RMSE--15.38')
         with t7:
             t7.subheader("RMSE--15.38")
-            image = Image.open(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\GRU_N-CMAPSS_DS06_unit10_test_w50_s1_bs256_lr0.001_sub10_rmse-15.38.png')
+            image = Image.open(r'GRU_N-CMAPSS_DS06_unit10_test_w50_s1_bs256_lr0.001_sub10_rmse-15.38.png')
             st.image(image, caption='RMSE--15.38')
         with t8:
             t8.subheader("RMSE--15.38")
-            image = Image.open(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\GRU_N-CMAPSS_DS08c-008_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-15.38.png')
+            image = Image.open(r'GRU_N-CMAPSS_DS08c-008_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-15.38.png')
             st.image(image,caption='RMSE--15.38')
         with t9:
             t9.subheader("RMSE--15.38")
@@ -187,73 +187,73 @@ elif genre == 'ML Model and Loss plots':
         t5, t6, t7, t8, t9 = st.tabs(["03-012-Unit 15", "05-Unit9", "06-Unit10", "08c-Unit9", "Loss Plot"])
         with t5:
             t5.subheader("RMSE--17.45")
-            image = Image.open(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\Deep_GRU_N-CMAPSS_DS03-012_unit15_test_w50_s1_bs256_lr0.001_sub10_rmse-17.45.png')
+            image = Image.open(r'Deep_GRU_N-CMAPSS_DS03-012_unit15_test_w50_s1_bs256_lr0.001_sub10_rmse-17.45.png')
             st.image(image, caption='RMSE--17.45')
         with t6:
             t6.subheader("RMSE--17.45")
-            image = Image.open(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\Deep_GRU_N-CMAPSS_DS05_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-17.45.png')
+            image = Image.open(r'Deep_GRU_N-CMAPSS_DS05_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-17.45.png')
             st.image(image, caption='RMSE--17.45')
         with t7:
             t7.subheader("RMSE--17.45")
-            image = Image.open(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\Deep_GRU_N-CMAPSS_DS06_unit10_test_w50_s1_bs256_lr0.001_sub10_rmse-17.45.png')
+            image = Image.open(r'Deep_GRU_N-CMAPSS_DS06_unit10_test_w50_s1_bs256_lr0.001_sub10_rmse-17.45.png')
             st.image(image, caption='RMSE--17.45')
         with t8:
             t8.subheader("RMSE--17.45")
-            image = Image.open(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\Deep_GRU_N-CMAPSS_DS08c-008_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-17.45.png')
+            image = Image.open(r'Deep_GRU_N-CMAPSS_DS08c-008_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-17.45.png')
             st.image(image, caption='RMSE--17.45')
         with t9:
             t9.subheader("RMSE--17.45")
-            image = Image.open('Deep_GRU_training_w50_s1_bs256_sub10_lr0.001.png')
+            image = Image.open(r'Deep_GRU_training_w50_s1_bs256_sub10_lr0.001.png')
             st.image(image, caption='Deep GRU ---Loss Plot')
     with t3:
         t5, t6, t7, t8, t9 = st.tabs(["03-012-Unit 15", "05-Unit9", "06-Unit10", "08c-Unit9", "Loss Plot"])
         with t5:
             t5.subheader("RMSE--4.8")
-            image = Image.open('TB__N-CMAPSS_DS03-012_unit15_test_w50_s1_bs256_lr0.001_sub10_rmse-4.8.png')
+            image = Image.open(r'TB__N-CMAPSS_DS03-012_unit15_test_w50_s1_bs256_lr0.001_sub10_rmse-4.8.png')
             st.image(image, caption='RMSE--4.8')
         with t6:
             t6.subheader("RMSE--4.8")
-            image = Image.open('TB__N-CMAPSS_DS05_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-4.8.png')
+            image = Image.open(r'TB__N-CMAPSS_DS05_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-4.8.png')
             st.image(image, caption='RMSE--4.8')
         with t7:
             t7.subheader("RMSE--4.8")
-            image = Image.open('TB__N-CMAPSS_DS06_unit10_test_w50_s1_bs256_lr0.001_sub10_rmse-4.8.png')
+            image = Image.open(r'TB__N-CMAPSS_DS06_unit10_test_w50_s1_bs256_lr0.001_sub10_rmse-4.8.png')
             st.image(image, caption='RMSE--4.8')
         with t8:
             t8.subheader("RMSE--4.8")
-            image = Image.open('TB__N-CMAPSS_DS08c-008_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-4.8.png')
+            image = Image.open(r'TB__N-CMAPSS_DS08c-008_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-4.8.png')
             st.image(image, caption='RMSE--4.8')
         with t9:
             t9.subheader("RMSE--4.8")
-            image = Image.open('TB__training_w50_s1_bs256_sub10_lr0.001.png')
+            image = Image.open(r'TB__training_w50_s1_bs256_sub10_lr0.001.png')
             st.image(image, caption='Basic Transformer--- Loss Plot')
     with t4:
         t5, t6, t7, t8, t9 = st.tabs(["03-012-Unit 15", "05-Unit9", "06-Unit10", "08c-Unit9", "Loss Plot"])
         with t5:
             t5.subheader("RMSE--4.68")
-            image = Image.open('TA__N-CMAPSS_DS03-012_unit15_test_w50_s1_bs256_lr0.001_sub10_rmse-4.68.png')
+            image = Image.open(r'TA__N-CMAPSS_DS03-012_unit15_test_w50_s1_bs256_lr0.001_sub10_rmse-4.68.png')
             st.image(image, caption='RMSE--4.68')
         with t6:
             t6.subheader("RMSE--4.68")
-            image = Image.open('TA__N-CMAPSS_DS05_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-4.68.png')
+            image = Image.open(r'TA__N-CMAPSS_DS05_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-4.68.png')
             st.image(image, caption='RMSE--4.68')
         with t7:
             t7.subheader("RMSE--4.68")
-            image = Image.open('TA__N-CMAPSS_DS06_unit10_test_w50_s1_bs256_lr0.001_sub10_rmse-4.68.png')
+            image = Image.open(r'TA__N-CMAPSS_DS06_unit10_test_w50_s1_bs256_lr0.001_sub10_rmse-4.68.png')
             st.image(image, caption='RMSE--4.68')
         with t8:
             t8.subheader("RMSE--4.68")
-            image = Image.open('TA__N-CMAPSS_DS08c-008_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-4.68.png')
+            image = Image.open(r'TA__N-CMAPSS_DS08c-008_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-4.68.png')
             st.image(image, caption='RMSE--4.68')
         with t9:
             t9.subheader("RMSE--4.68")
-            image = Image.open('TA__training_w50_s1_bs256_sub10_lr0.001.png')
+            image = Image.open(r'TA__training_w50_s1_bs256_sub10_lr0.001.png')
             st.image(image, caption='Advanced Transformer--- Loss Plot')
     with t10:
         t11, t12, t13, t14, t15 = st.tabs(["01-005-Unit 7", "01-005-Unit 8", "01-005-Unit 8", "02-006-Unit 14", "08c-008-Unit 10"])
         with t11:
             t11.subheader("RMSE--86.89")
-            image = Image.open('Random_N-CMAPSS_DS01-005_unit7_test_w50_s1_bs256_lr0.001_sub1_rmse-86.89.png')
+            image = Image.open(r'Random_N-CMAPSS_DS01-005_unit7_test_w50_s1_bs256_lr0.001_sub1_rmse-86.89.png')
             st.image(image, caption='RMSE--86.89')
         with t12:
             t12.subheader("RMSE--4.31")
@@ -261,15 +261,15 @@ elif genre == 'ML Model and Loss plots':
             st.image(image, caption='RMSE--4.31')
         with t13:
             t13.subheader("RMSE--15.58")
-            image = Image.open('Random_N-CMAPSS_DS01-005_unit8_test_w50_s1_bs256_lr0.001_sub10_rmse-15.58.png')
+            image = Image.open(r'Random_N-CMAPSS_DS01-005_unit8_test_w50_s1_bs256_lr0.001_sub10_rmse-15.58.png')
             st.image(image, caption='RMSE--15.58')
         with t14:
             t14.subheader("RMSE--2.97")
-            image = Image.open('Random_N-CMAPSS_DS02-006_unit14_test_w50_s1_bs256_lr0.001_sub10_rmse-2.97.png')
+            image = Image.open(r'Random_N-CMAPSS_DS02-006_unit14_test_w50_s1_bs256_lr0.001_sub10_rmse-2.97.png')
             st.image(image, caption='RMSE--2.97')
         with t15:
             t15.subheader("RMSE--86.89")
-            image = Image.open('Random_N-CMAPSS_DS08c-008_unit10_test_w50_s1_bs256_lr0.001_sub1_rmse-86.89.png')
+            image = Image.open(r'Random_N-CMAPSS_DS08c-008_unit10_test_w50_s1_bs256_lr0.001_sub1_rmse-86.89.png')
             st.image(image, caption='RMSE--86.89')
 elif genre == 'Inference':
     opt = st.sidebar.radio("Final summary and prediction from the models",('Report', 'Model Deployment', 'Conclusion'))
@@ -282,7 +282,7 @@ elif genre == 'Inference':
             However MSE turned out to be the best Loss function. Though others are marginally worse.
             Model(GRU+CNN+FC) considered here was of 16.4M FLOPS ."""
         )
-        image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\Loss_RMSE_NASA_score.png')
+        image = Image.open(r'Loss_RMSE_NASA_score.png')
         st.image(image, caption='Loss_RMSE_NASA_score')
         st.text(
             """
@@ -292,7 +292,7 @@ elif genre == 'Inference':
             Model(GRU+CNN+FC) considered here was of 49.6M FLOPS
             """
         )
-        image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\RUL_span_of_each_engine.png')
+        image = Image.open(r'RUL_span_of_each_engine.png')
         st.image(image, caption = 'RUL span of each engine')
         st.text(
             """
@@ -303,15 +303,15 @@ elif genre == 'Inference':
             Model(GRU+CNN+FC) considered here was of 49.6M FLOPS.
             """
         )
-        image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\Flight_class_Scores.png')
+        image = Image.open(r'Flight_class_Scores.png')
         st.image(image, caption='Flight class Scores')
-        # image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\Loss_RMSE_NASA_score.png')
+        # image = Image.open(r'Loss_RMSE_NASA_score.png')
         # st.image(image, caption='Loss_RMSE_NASA_score')
-        # image = Image.open('Model-Flops-inference-time-per-sample.png')
+        # image = Image.open(r'Model-Flops-inference-time-per-sample.png')
         # st.image(image, caption='Flops inference time per sample')
-        # image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\Model-Flops-critical-full-score.png')
+        # image = Image.open(r'Model-Flops-critical-full-score.png')
         # st.image(image, caption='Critical full scores')
-        # image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\Model-Flops-score.png')
+        # image = Image.open(r'Model-Flops-score.png')
         # st.image(image, caption='Best scores')
         st.text(
             """
@@ -319,7 +319,7 @@ elif genre == 'Inference':
             Evaluation time per sample on GTX 1080 Ti.
             """
         )
-        image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\Model-Flops-inference-time-per-sample.png')
+        image = Image.open(r'Model-Flops-inference-time-per-sample.png')
         st.image(image, caption='Model flops inference time per sample')
 
     if opt == 'Model Deployment':
@@ -373,16 +373,16 @@ elif genre == 'Inference':
     if opt == 'Conclusion':
         t1, t2, t3 = st.tabs(["COMPARISON-TABLE", "NASA-SCORES", "RMSE-SCORES"])
         with t1:
-            image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\INFERENCE_Dataset-Scores.png')
+            image = Image.open(r'INFERENCE_Dataset-Scores.png')
             st.image(image, caption="Inference Dataset Scores")
-            image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\INFERENCE_Percent_Samples_Scores.png')
+            image = Image.open(r'INFERENCE_Percent_Samples_Scores.png')
             st.image(image, caption="Inference Percent Samples Scores")
 
         with t2:
-            image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\FULL_NASA_dual_color.png')
+            image = Image.open(r'FULL_NASA_dual_color.png')
             st.image(image, caption='NASA_SCORES')
         with t3:
-            image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\FULL_RMSE_dual_color.png')
+            image = Image.open(r'FULL_RMSE_dual_color.png')
             st.image(image, caption='RMSE-SCORES')
 
 #st.write(df)
