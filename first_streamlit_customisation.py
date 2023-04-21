@@ -5,7 +5,7 @@ from PIL import Image
 import numpy as np
 from os.path import join as opj
 import matplotlib.pyplot as plt
-import netron
+
 
 # Page setting
 #st.set_page_config(layout="wide")
