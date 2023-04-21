@@ -3,4 +3,4 @@ pandas
 Pillow
 numpy
 path.py
-matplotlib.pyplot
+matplotlib
