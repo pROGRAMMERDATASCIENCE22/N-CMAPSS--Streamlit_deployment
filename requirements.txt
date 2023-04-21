@@ -1,6 +1,6 @@
 streamlit
 pandas
-PIL import Image
+PIL
 numpy as np
-os.path import join as opj
+os.path
 matplotlib.pyplot
