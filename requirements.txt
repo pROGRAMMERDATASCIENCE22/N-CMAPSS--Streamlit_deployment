@@ -2,5 +2,5 @@ streamlit
 pandas
 Pillow
 numpy
-os.path
+os
 matplotlib.pyplot
