@@ -333,7 +333,7 @@ elif genre == 'Inference':
 
         units_index_test = np.fromstring(
             file_devtest_df[file_devtest_df.File == filename + '.h5']["Test Units"].values[0][1:-1],
-            dtype=np.float, sep=" ").tolist()
+            dtype=np.float64, sep=" ").tolist()
         print(units_index_test)
         unit = st.sidebar.selectbox(label="Choose any Engine unit to predict RULs from:",
                                     options=[int(x) for x in units_index_test])
