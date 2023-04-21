@@ -75,7 +75,7 @@ if genre == 'Home':
         """,
             unsafe_allow_html=True
         )
-    add_bg_from_local('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\\12__Featured_Image_AeroShow_Bangalore.png')
+    add_bg_from_local(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\\12__Featured_Image_AeroShow_Bangalore.png')
 if genre == 'Model work flow':
     st.subheader("Aircraft Engine RUL prediction ML model development work flow")
     image = Image.open(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\MLworkflow.png')
