@@ -58,7 +58,7 @@ def user_input_units():
 
 genre = st.sidebar.radio(
     " ",
-    ('Home', 'Model work flow', 'EDA', 'Development and test', 'ML models', 'ML Model and Loss plots', 'Inference'))
+    ('Home', 'Model work flow', 'Development and test', 'EDA', 'ML models', 'ML Model and Loss plots', 'Inference'))
 if genre == 'Home':
     import base64
     def add_bg_from_local(image_file):
@@ -75,31 +75,15 @@ if genre == 'Home':
         """,
             unsafe_allow_html=True
         )
-    add_bg_from_local(r'https://raw.githubusercontent.com/pROGRAMMERDATASCIENCE22/N-CMAPSS--Streamlit_deployment/main/EDA%20Images/12__Featured_Image_AeroShow_Bangalore.png')
+    add_bg_from_local(r'12__Featured_Image_AeroShow_Bangalore.png')
 if genre == 'Model work flow':
     st.subheader("Aircraft Engine RUL prediction ML model development work flow")
-    image = Image.open(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\MLworkflow.png')
+    image = Image.open(r'MLworkflow.png')
     st.image(image, caption="", use_column_width='always')
 if genre == 'EDA':
     # opt = st.sidebar.radio("Plots for analysis",('Lineplot', 'Scatter', 'Boxplot', 'KDE', 'Waterfall'))
     # if opt == "Lineplot":
-    t1, t2, t3, t4, t5 = st.tabs(["Data Structure","Line plots", "Distribution of data", "Time Series", "HeatMaps"])
-    with t1:
-        st.text(
-            """
-            Engine Data Descriptions , Data Considerations for EDA & Predictive maintenance analysis.
-            """
-            )
-        t15, t16, t17 = st.tabs(["Data Structure", "Dataset", "Sensor dataframe"])
-        with t15:
-            image = Image.open(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\Data_hd5.png')
-            st.image(image, caption="", use_column_width='always')
-        with t16:
-            image = Image.open(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\Dataset.png')
-            st.image(image, caption="", use_column_width='always')
-        with t17:
-            image = Image.open(r'D:\IISc\CAPSTONE\Streamlit codes\EDA Images\Overview of Sensor data.png')
-            st.image(image, caption="", use_column_width='always')
+    t2, t3, t4, t5 = st.tabs(["Line plots", "Distribution of data", "Time Series", "HeatMaps"])
     with t2:
         t2.subheader("Altitude ranging across Flight classes 1, 2, 3 ")
         st.text(["Flight class vs Altitude"])
@@ -108,14 +92,10 @@ if genre == 'EDA':
         st.write(" Higher the Flight class ( length of the flight ) higher the altitude ")
 
     with t3:
-        t10, t11, t12 = st.tabs(["Box Plot", "Scatter plot", "Distribution between development and Test"])
+        t10, t12 = st.tabs(["Box Plot", "Distribution between development and Test"])
         with t10:
             t10.subheader("Distributions of Target values across Units")
             image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\\box_unit_target.png')
-            st.image(image, caption="", use_column_width='always')
-        with t11:
-            t11.subheader("All cycle distribution across Units")
-            image = Image.open('D:\IISc\CAPSTONE\Streamlit codes\EDA Images\\allunits_cycles.png')
             st.image(image, caption="", use_column_width='always')
         with t12:
             t12.text(
@@ -162,10 +142,6 @@ elif genre == 'Development and test':
 
 
 elif genre == 'ML models':
-    #opt = st.sidebar.radio("Necessary files for Model building",('Models'))
-    # url = "https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py"
-    #
-    # st.markdown("Click to view the models " % url)
     st.subheader("NN MODELS ")
     t1, t2, t3, t4 = st.tabs(['GRU', 'DEEPGRU', 'LARGEST GRU', 'TRANSFORMER'])
     with t1:
