@@ -1,6 +1,6 @@
 streamlit
 pandas
-PIL
+Pillow
 numpy
 os.path
 matplotlib.pyplot
