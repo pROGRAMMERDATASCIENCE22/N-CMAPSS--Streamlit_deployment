@@ -143,7 +143,7 @@ elif genre == 'Development and test':
 
 elif genre == 'ML models':
     st.subheader("NN MODELS ")
-    t1, t2, t3, t4 = st.tabs(['GRU', 'DEEPGRU', 'LARGEST GRU', 'TRANSFORMER'])
+    t1, t2, t3, t4 = st.tabs(['CUDNNGRU', 'DEEPGRUCNNFC', 'LARGESTCUDNNGRU', 'TRANSFORMER'])
     with t1:
          image = Image.open('gru_cnn_dc.png')
          st.image(image, caption = "")
@@ -164,45 +164,45 @@ elif genre == 'ML Model and Loss plots':
     with t1:
         t5, t6, t7, t8, t9 = st.tabs(["03-012-Unit 15", "05-Unit9", "06-Unit10", "08c-Unit9", "Loss Plot"])
         with t5:
-            t5.subheader("RMSE--15.38")
+            #t5.subheader("RMSE--15.38")
             image = Image.open(r'GRU_N-CMAPSS_DS03-012_unit15_test_w50_s1_bs256_lr0.001_sub10_rmse-15.38.png')
             st.image(image, caption='RMSE--15.38')
         with t6:
-            t6.subheader("RMSE--15.38")
+            #t6.subheader("RMSE--15.38")
             image = Image.open(r'GRU_N-CMAPSS_DS05_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-15.38.png')
             st.image(image, caption='RMSE--15.38')
         with t7:
-            t7.subheader("RMSE--15.38")
+            #t7.subheader("RMSE--15.38")
             image = Image.open(r'GRU_N-CMAPSS_DS06_unit10_test_w50_s1_bs256_lr0.001_sub10_rmse-15.38.png')
             st.image(image, caption='RMSE--15.38')
         with t8:
-            t8.subheader("RMSE--15.38")
+            #t8.subheader("RMSE--15.38")
             image = Image.open(r'GRU_N-CMAPSS_DS08c-008_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-15.38.png')
             st.image(image,caption='RMSE--15.38')
         with t9:
-            t9.subheader("RMSE--15.38")
+            #t9.subheader("RMSE--15.38")
             image = Image.open(r'GRU_training_w50_s1_bs256_sub10_lr0.001.png')
             st.image(image, caption='GRU ---Loss Plot')
     with t2:
         t5, t6, t7, t8, t9 = st.tabs(["03-012-Unit 15", "05-Unit9", "06-Unit10", "08c-Unit9", "Loss Plot"])
         with t5:
-            t5.subheader("RMSE--17.45")
+            #t5.subheader("RMSE--17.45")
             image = Image.open(r'Deep_GRU_N-CMAPSS_DS03-012_unit15_test_w50_s1_bs256_lr0.001_sub10_rmse-17.45.png')
             st.image(image, caption='RMSE--17.45')
         with t6:
-            t6.subheader("RMSE--17.45")
+            #t6.subheader("RMSE--17.45")
             image = Image.open(r'Deep_GRU_N-CMAPSS_DS05_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-17.45.png')
             st.image(image, caption='RMSE--17.45')
         with t7:
-            t7.subheader("RMSE--17.45")
+            #t7.subheader("RMSE--17.45")
             image = Image.open(r'Deep_GRU_N-CMAPSS_DS06_unit10_test_w50_s1_bs256_lr0.001_sub10_rmse-17.45.png')
             st.image(image, caption='RMSE--17.45')
         with t8:
-            t8.subheader("RMSE--17.45")
+            #t8.subheader("RMSE--17.45")
             image = Image.open(r'Deep_GRU_N-CMAPSS_DS08c-008_unit9_test_w50_s1_bs256_lr0.001_sub10_rmse-17.45.png')
             st.image(image, caption='RMSE--17.45')
         with t9:
-            t9.subheader("RMSE--17.45")
+            #t9.subheader("RMSE--17.45")
             image = Image.open(r'Deep_GRU_training_w50_s1_bs256_sub10_lr0.001.png')
             st.image(image, caption='Deep GRU ---Loss Plot')
     with t3:
@@ -375,8 +375,8 @@ elif genre == 'Inference':
         with t1:
             image = Image.open(r'INFERENCE_Dataset-Scores.png')
             st.image(image, caption="Inference Dataset Scores")
-            image = Image.open(r'INFERENCE_Percent_Samples_Scores.png')
-            st.image(image, caption="Inference Percent Samples Scores")
+            #image = Image.open(r'INFERENCE_Percent_Samples_Scores.png')
+            #st.image(image, caption="Inference Percent Samples Scores")
 
         with t2:
             image = Image.open(r'FULL_NASA_dual_color.png')
