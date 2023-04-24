@@ -160,7 +160,7 @@ elif genre == 'ML models':
 elif genre == 'ML Model and Loss plots':
     #st.sidebar.radio("Choose the model plot",('DEEP GRU CNN','GRU CNN DC', 'TRANSFORMER BASIC','TRANSFORMER ADVANCED', 'RANDOM PLOTS'))
     st.subheader("NN model training, testing and Loss plots")
-    t1, t2, t3, t4, t10 =st.tabs(["GRU","Deep GRU","Basic Transformer","Advanced Transformer", "Random"])
+    t1, t2, t3, t4, t10 =st.tabs(["CUDNNGRU","Deep GRU CNNFC","Basic Transformer","Advanced Transformer", "Random"])
     with t1:
         t5, t6, t7, t8, t9 = st.tabs(["03-012-Unit 15", "05-Unit9", "06-Unit10", "08c-Unit9", "Loss Plot"])
         with t5:
